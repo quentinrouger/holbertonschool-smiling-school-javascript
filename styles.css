@@ -282,6 +282,21 @@
   }
 }
 
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #C271FF;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* POPULAR SECTION  */
 
 .popular {
@@ -330,6 +345,10 @@
 
 .popular .carousel-control-next.arrow-right {
   right: var(--popular-arrows-x);
+}
+
+.popular .rating img {
+  width: 19px;
 }
 
 @media screen and (max-width: 1280px) {
